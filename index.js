@@ -2,7 +2,7 @@ function fetchGif() {
   // Todo: Replace the next line with your API key
   const apiKey = "insertWeridGiphyWeridAPIKeyHere";
   fetch(
-    `http://api.giphy.com/v1/gifs/random?api_key=${apiKey}&q=hello&limit=20`
+    `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=hello&limit=20`
   )
     .then((data) => {
       return data.json();
